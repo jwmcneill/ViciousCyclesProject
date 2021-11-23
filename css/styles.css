@@ -1,0 +1,325 @@
+/* Fonts */
+@font-face {
+    font-family: "ST MicroSquare Regular";
+    src: url(../fonts/st-microsquare-regular.ttf);
+}
+
+@font-face {
+    font-family: "ST MicroSquare Ex Regular";
+    src: url(../fonts/st-microsquare-ex-regular.ttf);
+}
+
+@font-face {
+    font-family: "ST MicroSquare Ex Bold";
+    src: url(../fonts/st-microsquare-ex-bold.ttf);
+}
+
+@font-face {
+    font-family: "Noto Sans Regular";
+    src: url(../fonts/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Noto Sans Bold";
+    src: url(../fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Noto Sans Italic";
+    src: url(../fonts/NotoSans-Italic.ttf);
+}
+
+@font-face {
+    font-family: "Noto Sans Bold Italic";
+    src: url(../fonts/NotoSans-BoldItalic.ttf);
+}
+
+#page {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Text */
+body {
+    font-family: "Noto Sans Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #545454;
+    margin: 0;
+    padding: 0;
+  }
+
+h1 {
+  margin: 0 0 1em 0;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 .5em 0;
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+h3 {
+  margin: 0 0 .5em 0;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+h4 {
+  margin: 0 0 1.5em 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: #007eff;
+}
+
+a:visited {
+  color: #65b1ff;
+}
+
+a.btn {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #a3620a;
+  border: 1px solid #a3620a;
+  padding: 4px 15px;
+  transition: background-color .5s;
+}
+
+a.btn:hover {
+  background-color: #a3620a;
+  color: white;
+  border: white
+}
+
+
+/* Header */
+header {
+  height: 1000px;
+  background: #cf0004 url(../images/vc-bike-background-2000.png) no-repeat center bottom;
+  position: relative;
+}
+
+header a.logo {
+  z-index: 1;
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 30px;
+  background: url(../images/vc-logo.svg) no-repeat 0 0;
+  background-size: contain;
+  top: 15px;
+  left:20px;
+
+}
+
+header a.logo span {
+  display: none;
+}
+
+header div.home {
+  position: absolute;
+  width: 42%;
+  top: 200px;
+  left: 55%;
+}
+
+header div.home h1 {
+  line-height: 1em;
+  margin: 0 0 30px 0;
+  color: black;
+}
+
+/* Section - All */
+section {
+  padding: 0 30px;
+}
+
+section::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Section - Main */
+section.main {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;  
+}
+
+section.main aside {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+section.main .content {
+  margin: 15px;
+  background: no-repeat center top;
+  background-size: 75px 75px;
+  padding-top: 85px;
+}
+
+section.main aside h3 a {
+  color: black;
+  text-decoration: none;
+}
+
+section.main aside h3 a:hover {
+  text-decoration: underline;
+}
+
+section.main aside .content.local {
+  background-image: url(../images/vicious-cycles-local.svg);
+}
+
+section.main aside .content.service {
+  background-image: url(../images/vicious-cycles-gears.svg);
+}
+
+section.main aside .content.community {
+  background-image: url(../images/vicious-cycles-handshake.svg);
+}
+
+/* Section - Mountains */
+section.mountains {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+section.mountains article {
+  padding: 0 20px 0 545px;
+  background: url("../images/nc-mountains.png") no-repeat 0 5px;
+  min-height: 220px;
+}
+
+/* Section - New Bikes */
+section.new-bikes {
+  background-color: #eee9d9;
+  position: relative;
+}
+
+section.new-bikes aside {
+  width: 30%;
+  float: left;
+  margin-right: 10px;
+}
+
+section.new-bikes aside .content{
+  padding: 30px 30px 20px 0;
+}
+
+section.new-bikes aside .content img {
+  display: block;
+  margin-bottom: 15px;
+  width: 70%;
+}
+
+section.new-bikes aside .content h4 {
+  margin-bottom: 0;
+}
+
+section.new-bikes aside .content p {
+  margin-bottom: .5em;
+}
+
+section.new-bikes aside .content a {
+  display: inline-block;
+  color: #a3620a;
+  font-family: 700;
+}
+
+section.new-bikes blockquote {
+  margin: 0;
+  width: 32%;
+  color: #545454;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 4%;
+}
+
+section.new-bikes blockquote p {
+  margin: 30px 30px 20px 50px;
+}
+
+section.new-bikes blockquote p.quote {
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+section.new-bikes blockquote p.credit {
+  color: #777;
+  font-size: .9em;
+  margin-top: 0;
+  padding-left: 20px;
+  line-height: 1.3em;
+  position: relative;
+}
+
+/* Navigation */
+nav {
+  background-color: white;
+  position: absolute;
+  text-align: right;
+  top: 0px;
+  left: 0px;
+  padding: 10px 0 0 0;
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: #a3620a;
+}
+
+nav a {
+  display: inline-block;
+  color: #a3620a;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 80px;
+  position: relative;
+}
+
+nav a:visited {
+  color: black;
+}
+
+/* Footer */
+footer {
+  font-size: .8em;
+  margin: 40px;
+  color: #999;
+}
+
+footer .content {
+  display: inline;
+}
+
+footer a {
+  margin-left: 30px;
+  color: #777;
+}
+
+footer a:visited {
+  margin-left: 30px;
+  color: #777;
+}
+
+footer a:hover {
+  margin-left: 30px;
+  color: black;
+}
